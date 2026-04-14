@@ -1,0 +1,50 @@
+body {
+    background-color: #F2E3D5 !important;
+}
+
+.contenedor {
+    background-color: #FDF5EC !important; 
+}
+
+/* Bottom-nav */
+.nav-pastilla {
+    background-color: #FDF5EC; 
+    border: none;
+  
+}
+.icon-nav {
+    fill: #9E7E6A;
+}
+.icon-nav-selec {
+    fill: #E5AE5C;
+}
+.btn-house {
+    border: none;
+}
+
+/* Top-nav*/
+nav.navbar {
+    background-color: rgba(116, 76, 56, 0.95) !important;
+    color: #F3E6D9 !important;
+}
+.icon-Notificaciones, .icon-Menu {
+    fill: #F3E6D9 !important;
+}
+
+/*Side-bar*/
+nav.siderbar {
+    height: calc(100vh - 62px); /* 100% de pantalla menos la altura de la navbar */
+    top: 62px;  
+    overflow-y: auto;
+}
+
+
+/*Contenido principal*/
+
+
+
+
+/* Ajuste para que el contenido no quede tapado por la barra inferior en móvil */
+@media (max-width: 767.98px) {
+    body { padding-bottom: 90px; }
+}
