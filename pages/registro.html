@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/registro.css">
+    <title>Registro - NutriNuri</title>
+    <link rel="icon" type="image/svg+xml" href="../../images/fontawesom/otter-solid-full.svg">
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100" style="background-color: #F8F3EE;">
+
+  <div class="registro-container col-11 col-sm-8 col-md-6 col-lg-4 shadow-lg p-4" style="background-color: #FFFDFB; border-radius: 25px;">
+    <h2 class="auth-title text-center mb-4">Crea tu cuenta</h2>
+    
+    <!-- Selector de roles estilo Nuri -->
+    <div class="row g-2 mb-4">
+        <div class="col-6">
+            <input type="radio" class="btn-check" name="rol" id="nutri" value="nutriologo">
+            <label class="btn btn-outline-secondary w-100 rounded-4 py-3" for="nutri">Nutriólogo</label>
+        </div>
+        <div class="col-6">
+            <input type="radio" class="btn-check" name="rol" id="paci" value="paciente">
+            <label class="btn btn-outline-secondary w-100 rounded-4 py-3" for="paci">Paciente</label>
+        </div>
+    </div>
+
+    <div id="campos-dinamicos">
+        <!-- Los inputs inyectados por JS deben tener la clase 'form-control border-0 shadow-sm rounded-3 p-3' -->
+    </div>
+  </div>
+
+  <script>
+    function actualizarFormulario() {
+      const rolSeleccionado = document.querySelector('input[name="rol"]:checked')?.value;
+      const contenedor = document.getElementById('campos-dinamicos');
+      
+      if (!rolSeleccionado) {
+        contenedor.innerHTML = "";
+        return;
+      }
+
+      let contenido = "";
+      // Estilos de inputs adaptados a Bootstrap pero con tu estética de 'línea'
+      if (rolSeleccionado === 'paciente') {
+        contenido = `
+          <div class="mb-3">
+            <label class="form-label small fw-bold">CORREO ELECTRÓNICO</label>
+            <input type="email" class="form-control" placeholder="tu@correo.com" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">CONTRASEÑA</label>
+            <input type="password" class="form-control" placeholder="********" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">CÓDIGO DE INVITACIÓN</label>
+            <input type="text" class="form-control" placeholder="Ej: NUTRI-12345">
+          </div>
+          <button class="btn btn-auth w-100 py-2 mt-3 fw-bold" type="submit">REGISTRARSE</button>`;
+      } else {
+        contenido = `
+          <div class="mb-3">
+            <label class="form-label small fw-bold">NOMBRE COMPLETO</label>
+            <input type="text" class="form-control mb-2" placeholder="Nombre(s)">
+            <input type="text" class="form-control" placeholder="Apellidos">
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">CÉDULA PROFESIONAL</label>
+            <input type="text" class="form-control" placeholder="Ingresa tu cédula">
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">CORREO INSTITUCIONAL</label>
+            <input type="text" class="form-control" placeholder="nombre@imss.gob.mx">
+          </div>
+          <button class="btn btn-auth w-100 py-2 mt-3 fw-bold" type="submit">REGISTRARSE</button>`;
+      }
+      
+      contenedor.innerHTML = contenido;
+
+      // Retraso para que la transición CSS funcione
+      setTimeout(() => {
+        contenedor.classList.add('visible');
+      }, 20);
+    }
+
+    const radios = document.getElementsByName('rol');
+    radios.forEach(radio => radio.addEventListener('change', actualizarFormulario));
+
+    // Al cargar, no mostrará nada
+    actualizarFormulario();
+  </script>
+  <script src="../../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>

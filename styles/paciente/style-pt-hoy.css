@@ -1,0 +1,140 @@
+body {
+    background-color: #F2E3D5 !important;
+}
+
+.contenedor {
+    background-color: #FDF5EC !important; 
+}
+
+/* Bottom-nav */
+.nav-pastilla {
+    background-color: #FDF5EC; 
+    border: none;
+  
+}
+.icon-nav {
+    fill: #9E7E6A;
+}
+.icon-nav-selec {
+    fill: #82D677;
+}
+.btn-house {
+    border: none;
+}
+
+/* Top-nav*/
+nav.navbar {
+    background-color: rgba(116, 76, 56, 0.95) !important;
+    color: #F3E6D9 !important;
+}
+.icon-Notificaciones, .icon-Menu {
+    fill: #F3E6D9 !important;
+}
+
+/*Side-bar*/
+nav.siderbar {
+    height: calc(100vh - 62px); /* 100% de pantalla menos la altura de la navbar */
+    top: 62px;  
+    overflow-y: auto;
+}
+
+
+/*Contenido principal*/
+.card-custom { 
+            background-color: #FDF5EC; 
+            border: none; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 15px rgba(116, 76, 56, 0.08);
+        }
+
+        /* Estilos para la lista de comidas */
+        .meal-item {
+            border-bottom: 1px solid rgba(116, 76, 56, 0.1);
+            transition: background-color 0.3s;
+        }
+        .meal-item:last-child {
+            border-bottom: none;
+        }
+        .meal-item:hover {
+            background-color: rgba(217, 160, 102, 0.05);
+        }
+
+        /* Estilo para tachar ingredientes individuales */
+.item-alimento {
+    transition: all 0.2s;
+}
+.item-alimento:has(.food-checkbox:checked) .food-label {
+    text-decoration: line-through;
+    color: #9E7E6A !important;
+    opacity: 0.7;
+}
+        
+        /* Checkbox personalizado y grande para móvil */
+        .custom-checkbox {
+            width: 1.5rem;
+            height: 1.5rem;
+            cursor: pointer;
+            border-color: #D9A066;
+        }
+        .custom-checkbox:checked {
+            background-color: #82D677;
+            border-color: #82D677;
+        }
+        
+        /* Tachar texto cuando está checkeado (usando CSS moderno :has) */
+        .meal-item:has(.custom-checkbox:checked) .meal-title {
+            text-decoration: line-through;
+            color: #9E7E6A !important;
+        }
+
+        /* Barra de progreso */
+        .progress-bar-green {
+            background-color: #82D677;
+            transition: width 0.5s ease;
+        }
+
+        /* Botón de acción */
+        .btn-save-custom {
+            background-color: #744c38;
+            color: #FDF5EC;
+            border-radius: 15px;
+            font-weight: bold;
+            border: none;
+            padding: 12px;
+            transition: all 0.2s;
+        }
+        .btn-save-custom:hover {
+            background-color: #5a3a2a;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Burbuja de nutria */
+        .estado-burbuja {
+            background-color: #fff;
+            color: #744c38;
+            border: 2px solid #82D677;
+            border-radius: 20px;
+            padding: 10px 20px;
+            display: inline-block;
+            position: relative;
+            font-weight: 600;
+        }
+        .estado-burbuja::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            transform: translateY(-50%);
+            border-width: 10px 12px 10px 0;
+            border-style: solid;
+            border-color: transparent #82D677 transparent transparent;
+        }
+
+
+
+
+/* Ajuste para que el contenido no quede tapado por la barra inferior en móvil */
+@media (max-width: 767.98px) {
+    body { padding-bottom: 90px; }
+}
