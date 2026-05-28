@@ -25,13 +25,13 @@ export function renderFormularioRegistro() {
             <div class="mb-3">
 
                 <label class="form-label small fw-bold">
-                    CORREO ELECTRÓNICO
+                    NOMBRE
                 </label>
 
                 <input
-                    type="email"
+                    type="text"
                     class="form-control"
-                    placeholder="tu@correo.com"
+                    placeholder="Nombre(s)"
                 >
 
             </div>
