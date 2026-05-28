@@ -1,0 +1,78 @@
+/* COLORES BASE NUTRI */
+body {
+    background-color: #F8F4F0 !important;
+}
+.text-brown { color: #442c1d; }
+.navbar-nutri { background-color: #744c38 !important; }
+
+/* BOTÓN PRIMARIO */
+.btn-nutri-primary {
+    background-color: #D9A066;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-nutri-primary:hover {
+    background-color: #744c38;
+    color: white;
+}
+
+/* TABLA Y FILAS */
+.custom-table th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.row-smae {
+    background-color: #ffffff;
+}
+
+/* AQUÍ ESTÁ LA DIFERENCIACIÓN DEL ALIMENTO AGREGADO */
+.row-custom-food {
+    background-color: #fcf6ef !important; /* Un tono crema claro y cálido */
+    border-left: 4px solid #D9A066; /* Una línea lateral para destacarlo aún más */
+}
+
+/* Hover de la tabla adaptado a las filas de color */
+.custom-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+.custom-table tbody tr.row-custom-food:hover {
+    background-color: #f7ede1 !important; /* Hover ligeramente más oscuro para el crema */
+}
+
+/* BADGES DE GRUPOS */
+.badge-group {
+    padding: 5px 10px;
+    border-radius: 50rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.badge-frutas { background-color: #fff3cd; color: #856404; }
+.badge-cereales { background-color: #f8d7da; color: #721c24; }
+.badge-aoa { background-color: #cce5ff; color: #004085; }
+.badge-lacteos { background-color: #e2e3e5; color: #383d41; }
+
+/* BADGES DE RESTRICCIONES (TAGS) */
+.badge-tag {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    margin-right: 3px;
+    display: inline-block;
+}
+
+/* BOTONES DE LA TABLA */
+.btn-white {
+    background-color: white;
+    transition: all 0.2s;
+}
+.btn-white:disabled {
+    background-color: #f8f9fa;
+    opacity: 0.7;
+    cursor: not-allowed;
+}

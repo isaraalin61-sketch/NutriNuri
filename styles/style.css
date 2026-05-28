@@ -1,0 +1,142 @@
+body {
+
+    background-color: #F2E3D5 !important;
+
+    font-family:
+        'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+}
+
+.auth-card {
+
+    background-color: #FDF5EC;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(116, 76, 56, 0.1);
+
+    padding: 2rem;
+
+}
+
+.registro-container {
+
+    background-color: #FFFDFB;
+
+    border-radius: 25px;
+
+}
+
+.form-control {
+
+    border: none !important;
+
+    border-bottom:
+        2px solid #ccc !important;
+
+    border-radius: 0 !important;
+
+    background-color:
+        transparent !important;
+
+    box-shadow: none !important;
+
+    padding: 8px 0 !important;
+
+}
+
+.form-control:focus {
+
+    border-bottom:
+        2px solid #744c38 !important;
+
+    box-shadow: none !important;
+
+}
+
+.auth-title {
+
+    color: #744c38;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+}
+
+.btn-auth {
+
+    background:
+        linear-gradient(
+            135deg,
+            #D9A066 0%,
+            #C0854D 100%
+        );
+
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 50px;
+
+    border: none;
+
+    padding: 12px;
+
+    transition: 0.3s;
+
+}
+
+.btn-auth:hover {
+
+    transform: translateY(-2px);
+
+    filter: brightness(1.1);
+
+}
+
+.text-nuri-dark {
+
+    color: #744c38;
+
+}
+
+.forgot-link,
+.register-link {
+
+    color: #D9A066;
+
+}
+
+.error {
+
+    color: #dc3545;
+
+    font-size: 0.8rem;
+
+}
+
+#nutri:checked + label {
+
+    background-color: #2D5A27 !important;
+
+    border-color: #2D5A27 !important;
+
+    color: white !important;
+
+}
+
+#paci:checked + label {
+
+    background-color: #A7D129 !important;
+
+    border-color: #A7D129 !important;
+
+    color: white !important;
+
+}

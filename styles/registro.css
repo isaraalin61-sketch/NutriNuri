@@ -1,0 +1,26 @@
+/* Color para Nutriólogo cuando se selecciona */
+#nutri:checked + label {
+    background-color: #2D5A27 !important;
+    border-color: #2D5A27 !important;
+    color: white !important;
+}
+
+/* Color para Paciente cuando se selecciona */
+#paci:checked + label {
+    background-color: #A7D129 !important;
+    border-color: #A7D129 !important;
+    color: white !important;
+}
+
+/* Opcional: Cambiar el color del borde cuando NO están seleccionados */
+.btn-outline-secondary {
+    border-color: #EBD7C5 !important;
+    color: #744c38 !important;
+}
+
+/* Color cuando pasas el mouse (hover) */
+.btn-outline-secondary:hover {
+    background-color: #F8F3EE !important;
+    color: #744c38 !important;
+    border-color: #744c38 !important;
+}

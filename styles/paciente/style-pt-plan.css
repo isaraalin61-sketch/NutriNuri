@@ -1,0 +1,171 @@
+body {
+    background-color: #F2E3D5 !important;
+}
+
+.main-plan {
+    max-width: 800px;
+}
+
+.titulo-plan {
+    color: #744c38;
+}
+
+.avatar-user {
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+}
+
+.nombre-user {
+    font-size: 1.1rem;
+}
+
+.badge-noti {
+    font-size: 0.55rem;
+    border: 1px solid #744c38;
+}
+
+nav.navbar {
+    background-color: rgba(116, 76, 56, 0.95) !important;
+    color: #F3E6D9 !important;
+}
+
+.icon-Notificaciones,
+.icon-Menu {
+    fill: #F3E6D9 !important;
+}
+
+.nav-pastilla {
+    background-color: #FDF5EC;
+}
+
+.nav-icon {
+    fill: currentColor;
+}
+
+.icon-nav {
+    color: #9E7E6A;
+}
+
+.icon-nav-selec {
+    color: #E5AE5C;
+}
+
+.btn-house {
+    border: none;
+}
+
+nav.siderbar {
+    height: calc(100vh - 62px);
+    top: 62px;
+    overflow-y: auto;
+}
+
+.nav-activo {
+    background-color: rgb(241, 216, 175) !important;
+    color: #442c1d !important;
+}
+
+.resumen-nutricional {
+    background-color: #744c38;
+    color: #FDF5EC;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.macro-item {
+    text-align: center;
+    border-right: 1px solid rgba(243, 230, 217, 0.2);
+}
+
+.macro-item:last-child {
+    border-right: none;
+}
+
+.nav-opciones .nav-link {
+    color: #744c38;
+    font-weight: bold;
+    margin: 0 4px;
+    border-radius: 12px;
+}
+
+.nav-opciones .nav-link.active {
+    background-color: #EBD7C5;
+    color: #442c1d;
+}
+
+.card-comida {
+    background-color: #FDF5EC;
+    border: none;
+    border-radius: 20px;
+}
+
+.badge-tiempo {
+    background-color: #EBD7C5;
+    color: #744c38;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+}
+
+.ingrediente-item {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.6);
+    padding: 8px 16px;
+    border-radius: 12px;
+    margin: 4px;
+    font-size: 0.95rem;
+    border: 1px solid #EBD7C5;
+}
+
+.btn-smae {
+    background-color: #fff;
+    color: #744c38;
+    border: 1px solid #EBD7C5;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-smae:hover {
+    background-color: #EBD7C5;
+}
+
+.modal-custom {
+    border-radius: 20px;
+    background-color: #FDF5EC;
+}
+
+.modal-smae {
+    border-radius: 20px;
+}
+
+.header-smae {
+    background-color: #744c38;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.titulo-modal {
+    color: #744c38;
+}
+
+.nav-pastilla{
+    min-height: 70px;
+}
+
+.nav-icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+
+    body {
+        padding-bottom: 90px;
+    }
+
+}

@@ -1,0 +1,247 @@
+body {
+    background-color: #F2E3D5 !important;
+}
+
+/* NAVBAR */
+
+nav.navbar {
+    background-color: rgba(116, 76, 56, 0.95) !important;
+}
+
+.icon-Notificaciones,
+.icon-Menu {
+    fill: #F3E6D9;
+}
+
+.avatar-user {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+
+    background-color: #D9A066;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    color: white;
+}
+
+.user-name {
+    font-size: 1.1rem;
+}
+
+.badge-notif {
+    position: absolute;
+
+    top: 0;
+    left: 90%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #D9A066;
+
+    border-radius: 999px;
+
+    font-size: 0.55rem;
+
+    padding: 3px 6px;
+
+    border: 1px solid #744c38;
+
+    color: white;
+}
+
+/* SIDEBAR */
+
+nav.siderbar {
+    height: calc(100vh - 62px);
+    top: 62px;
+    overflow-y: auto;
+}
+
+.nav-hoy-active {
+    background-color: rgb(187, 248, 180) !important;
+    color: #442c1d !important;
+}
+
+/* CARDS */
+
+.card-custom {
+    background-color: #FDF5EC;
+
+    border: none;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(116, 76, 56, 0.08);
+}
+
+.titulo-dia,
+.titulo-card {
+    color: #744c38;
+}
+
+.porcentaje {
+    color: #82D677;
+}
+
+/* PROGRESO */
+
+.barra-bg {
+    height: 15px;
+
+    border-radius: 10px;
+
+    background-color: rgba(116, 76, 56, 0.1);
+}
+
+.progress-bar-green {
+    background-color: #82D677;
+    transition: width 0.5s ease;
+}
+
+/* CHECKBOX */
+
+.custom-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    cursor: pointer;
+
+    border-color: #D9A066;
+}
+
+.custom-checkbox:checked {
+    background-color: #82D677;
+    border-color: #82D677;
+}
+
+/* ITEMS COMIDA */
+
+.item-alimento {
+    transition: all 0.2s;
+}
+
+.item-alimento:has(.food-checkbox:checked) .food-label {
+    text-decoration: line-through;
+
+    color: #9E7E6A !important;
+
+    opacity: 0.7;
+}
+
+/* BOTON */
+
+.btn-save-custom {
+    background-color: #744c38;
+
+    color: #FDF5EC;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    border: none;
+
+    padding: 12px;
+
+    transition: all 0.2s;
+}
+
+.btn-save-custom:hover {
+    background-color: #5a3a2a;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+/* NUTRIA */
+
+.nutria-head {
+    max-height: 80px;
+}
+
+.estado-burbuja {
+    background-color: white;
+
+    color: #744c38;
+
+    border: 2px solid #82D677;
+
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    display: inline-block;
+
+    position: relative;
+
+    font-weight: 600;
+}
+
+.estado-burbuja::before {
+    content: '';
+
+    position: absolute;
+
+    top: 50%;
+    left: -12px;
+
+    transform: translateY(-50%);
+
+    border-width: 10px 12px 10px 0;
+    border-style: solid;
+
+    border-color: transparent #82D677 transparent transparent;
+}
+
+/* BOTTOM NAV */
+
+.nav-pastilla {
+    background-color: #FDF5EC;
+}
+
+.icon-nav {
+    color: #9E7E6A;
+    text-decoration: none;
+}
+
+.icon-nav-selec {
+    color: #82D677;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-house {
+    border: none;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-nav {
+    fill: #9E7E6A;
+}
+
+.icon-nav-selec {
+    fill: #82D677;
+}
+
+.btn-house {
+    border: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767.98px) {
+
+    body {
+        padding-bottom: 90px;
+    }
+
+}

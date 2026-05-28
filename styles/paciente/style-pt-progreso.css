@@ -1,0 +1,190 @@
+body{
+    background-color: #F2E3D5 !important;
+    font-family:system-ui;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color:#744c38;
+}
+
+.icon-menu,
+.icon-notificaciones{
+    fill:#F3E6D9;
+}
+
+.avatar-user{
+    width:45px;
+    height:45px;
+    border-radius:12px;
+    background:#D9A066;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.user-name{
+    font-size:1rem;
+}
+
+.badge-noti{
+    position:absolute;
+    top:2px;
+    right:0;
+    background:#D9A066;
+    color:white;
+    border-radius:999px;
+    font-size:.65rem;
+    padding:2px 6px;
+}
+
+.dropdown-notis{
+    background:#FDF5EC;
+    min-width:260px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    min-height:100vh;
+    background:#fff;
+}
+
+.menu-title{
+    color:#9B7B65;
+    font-size:.75rem;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.nav-active{
+    background:#B5FAE4 !important;
+    color: #442c1d !important;
+}
+
+/* TITLES */
+
+.title-page{
+    color:#744c38;
+}
+
+.section-title{
+    color:#744c38;
+}
+
+/* CARDS */
+
+.card-custom{
+    background:#FDF5EC;
+    border:1px solid #EAD9C9;
+    border-radius:18px;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.label-card{
+    color:#9B7B65;
+    font-size:.8rem;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.card-custom h2{
+    color:#744c38;
+    font-weight:800;
+}
+
+/* META */
+
+.badge-meta{
+    background:#D9A066;
+    color:white;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:.8rem;
+}
+
+/* GRAFICA */
+
+.grafica-box{
+    width:100%;
+    overflow:hidden;
+}
+
+#graficaPeso {
+    width: 100%;
+    height: 220px;
+    display: block;
+}
+
+.grafica-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.linea-peso{
+    fill:none;
+    stroke:#D9A066;
+    stroke-width:4;
+    stroke-linecap:round;
+}
+
+.punto-peso{
+    fill:#744c38;
+}
+
+.label-peso{
+    fill:#744c38;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* ALERTAS */
+
+.alerta-item{
+    background:white;
+    border-radius:14px;
+    padding:14px;
+    margin-bottom:12px;
+    border:1px solid #F0E2D5;
+}
+
+/* MEDALLAS */
+
+.medalla-card{
+    background:white;
+    border-radius:16px;
+    border:1px solid #F0E2D5;
+    padding:16px;
+    text-align:center;
+    height:100%;
+}
+
+.medalla-icon{
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+/* BOTTOM NAV */
+.nav-pastilla {
+    background-color: #FDF5EC; 
+    border: none;
+  
+}
+.icon-nav {
+    fill: #9E7E6A;
+}
+.icon-nav-selec {
+    fill: #58D6AC ;
+}
+.btn-house {
+    border: none;
+}
+/* Ajuste para que el contenido no quede tapado por la barra inferior en móvil */
+@media (max-width: 767.98px) {
+    body { padding-bottom: 90px; }
+}
