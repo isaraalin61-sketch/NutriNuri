@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../styles/style.css"
+    >
+
+    <title>Registro - NutriNuri</title>
+
+</head>
+
+<body class="d-flex align-items-center justify-content-center min-vh-100">
+
+    <div
+        class="registro-container col-11 col-sm-8 col-md-6 col-lg-4 shadow-lg p-4"
+    >
+
+        <h2 class="auth-title text-center mb-4">
+            Crea tu cuenta
+        </h2>
+
+        <div class="row g-2 mb-4">
+
+            <div class="col-6">
+
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="rol"
+                    id="nutri"
+                    value="nutriologo"
+                >
+
+                <label
+                    class="btn btn-outline-secondary w-100 rounded-4 py-3"
+                    for="nutri"
+                >
+
+                    Nutriólogo
+
+                </label>
+
+            </div>
+
+            <div class="col-6">
+
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="rol"
+                    id="paci"
+                    value="paciente"
+                    checked
+                >
+
+                <label
+                    class="btn btn-outline-secondary w-100 rounded-4 py-3"
+                    for="paci"
+                >
+
+                    Paciente
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <div id="campos-dinamicos"></div>
+
+    </div>
+
+    <script src="../../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+        type="module"
+        src="../controllers/registro-controller.js"
+    ></script>
+
+</body>
+</html>
